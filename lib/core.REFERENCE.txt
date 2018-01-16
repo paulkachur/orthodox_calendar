@@ -1,0 +1,245 @@
+MYSQL TABLES
+--------------------------------------------
+days
+Defines info on pdays as well as mini menaion
+  daId int AUTO_INCREMENT
+  daPday int
+  daMonth int
+  daDay int
+  daPname text -- "2d Sunday of Lent" | "Monday of 3d week after Pentecost"
+  daPsub varchar(128) -- subtext for above
+  daFname varchar(255) -- title of feast
+  daFlevel int -- level of feast:
+	-1 No Liturgy
+	0 Liturgy
+	1 Presanctified
+	2 Black squigg (6-stich typikon symbol)
+	3 Red squigg (doxology typikon symbol)
+	4 Red cross (polyeleos typikon symbol)
+	5 Red cross half-circle (vigil typikon symbol)
+	6 Red cross circle (great feast typikon symbol)
+	7 Major feast Theotokos
+	8 Major feast Lord
+  daService int -- not used yet, will provide liturgical codes
+  daSnote varchar(64) -- service note (as on St Tikhon calendar)
+  daSaint varchar(128) -- at least one saint for display or typikon symbol
+  daFast int -- fasting level:
+	0 neutral
+	1 fast
+	2 lent
+	3 apostles
+	4 dormition
+	5 nativity
+  daFexc int -- fasting exceptions:
+	1 Wine & Oil Allowed
+	2 Fish, Wine & Oil Allowed
+	3 Wine & Oil Allowed (cannot be overriden by 2)
+	4 Fish, Wine & Oil Allowed (overrides 3)
+	5 Wine Allowed
+	6 Wine, Oil & Caviar Allowed
+	7 Meat Fast
+	8 Strict Fast (Wine & Oil)
+	9 Strict Fast
+	10 No overrides
+	11 Fast Free
+  daFlag tinyint -- for housekeeping
+
+-----------------------------------------
+readings
+Defines pericopes for pdays and menaion days
+  reId int AUTO_INCREMENT
+  reMonth int
+  reDay int
+  rePday int -- 999 and 499 are dummy, designed to not be found
+  reType varchar(64) -- Gospel, Epistle, Vespers, etc.
+  reDesc varchar(64) -- extra note
+  reBook varchar(8) -- Matthew | Mark | Luke | John | Apostol | OT
+  reNum varchar(8) -- pericope number
+  reIndex int -- number to sort on to keep readings in order
+  reFlag tinyint -- housekeeping
+
+----------------------------------------------
+scriptures
+Scriptural texts
+  scId int AUTO_INCREMENT
+  scOT tinyint -- 1 for Old Testament
+  scBook varchar(32)
+  scVerse int -- chapter * 1000 + verse
+  scText text -- includes "*" and "|" to construct liturgical reading
+
+------------------------------------------------
+xceptions
+Defines feasts that are moved (e.g., out of Holy Week) at discretion of St Tikhon's
+  xcId int AUTO_INCREMENT
+  xcYear int
+  xcMonth int -- today
+  xcDay int -- today
+  xcNewMonth int  -- redirect to (99 is month designed not to be found)
+  xcNewDay int  -- redirect to
+  xcNote varchar(255)
+  xcFlag tinyint
+
+---------------------------------------------------
+zachalos
+  zaId int AUTO_INCREMENT
+  zaNum varchar(8) -- pericope number
+  zaBook varchar(16) -- Matthew | Mark | Luke | John | Apostol | OT
+  zaDisplay varchar(128)
+  zaSdisplay varchar(64) -- abbreviated display
+  zaDesc varchar(128) -- preserves notes from Holoviak Gospel and Arhipov Apostol
+  zaPreverse varchar(8) -- alternate 1st verse number
+  zaPrefix varchar(255) -- text inserted at beginning ("At that time..."")
+  zaPrefixb varchar(128) -- text inserted before 2d block
+  zaVerses varchar(128) -- range of verses fetched from scriptures table
+  zaSuffix varchar(255) -- text inserted at end
+  zaFlag tinyint
+
+------------------------------------------------
+values returned by calculateYear() function
+  [id] => paschal year (e.g., Theophany 2018 is part of paschal year 2017)
+  [pascha_jd] => Julian day count of Pascha
+  [finding] => pday of 2/24
+  [annunciation] => pday of 3/25
+  [annunciation_weekday] => weekday of 3/25 (0=Sunday)
+  [peterpaul] => pday of 6/29
+  [beheading] => pday of 8/29
+  [nativity_theotokos] => pday of 9/8
+  [elevation] => pday of 9/14
+  [elevation_weekday] => weekday of 9/14 (0=Sunday)
+  [sat_bef_elevation] => pday
+  [sun_bef_elevation] => pday
+  [sat_aft_elevation] => pday
+  [sun_aft_elevation] => pday
+  [lucan_jump] => number of days
+  [fathers_six] => pday
+  [fathers_seven] => pday
+  [demetrius_saturday] => pday
+  [synaxis_unmercenaries] => pday
+  [nativity] => pday of 12/25
+  [nativity_weekday] => weekday of 12/25 (0=Sunday)
+  [forefathers] => pday
+  [sat_bef_nativity] => pday
+  [sun_bef_nativity] => pday
+  [sat_aft_nativity] => pday
+  [sun_aft_nativity] => pday
+  [theophany] => pday of 1/6 in current pascal year (next calendar year)
+  [theophany_weekday] => weekday of 1/6 (0=Sunday)
+  [sat_bef_theophany] => pday
+  [sun_bef_theophany] => pday
+  [sat_aft_theophany] => pday
+  [sun_aft_theophany] => pday
+  [previous_pascha_jd] => Julian Day Count of previous Pascha
+  [previous_pascha] => pday of previous Pascha
+  [next_pascha_jd] => Julian Day Count of next Pascha
+  [next_pascha] => pday of next Pascha
+  [extra_sundays] => number of Sundays in "gap" before next paschal year
+  [reserves] => array of pdays of unread Sunday gospels
+  [floats] => array of pdays (499=dummy) of floating feasts (below)
+  [nodaily] => array of pdays where daily readings are suppressed
+  [noparemias] => array of pdays where paremias are moved (in Lent)
+  [getparemias] => array of pdays where we get paremias from next day (in Lent)
+
+------------------------------------------------
+values returned by calculateDay() function
+  [month] => month (1-12)
+  [day] => day
+  [year] => calendar year
+  [pyear] => paschal year
+  [jd] => Julian Day Count
+  [pday] => pday
+  [dow] => weekday (0-6)
+  [nday] => pday in relation to next Pascha
+  [vday] => pday in relation to previous Pascha
+  [gday] => pday for gospel
+  [eday] => pday for epistle
+  [jump] => days we actually jumped because of Lucan jump
+  [of_luke] => gospel number of Luke
+  [fday] => floating feast index 
+  [twentynine] => boolean if we should get 2/29 from menaion on 2/28
+  [no_memorial] => boolean if memorial Saturday is cancelled
+  [menaion_month] => month to lookup in readings table
+  [menaion_day] => mday to lookup in readings table
+  [menaion_note] => note for xceptions
+  [pname] => name of pday (e.g., "29th Sunday after Pentecost")
+  [fname] => name of feast
+  [snote] => service note
+  [saint] => name of saint
+  [service] => service code
+  [feast_level] => feast level (see days table)
+  [fast] => fasting level (see days table)
+  [fast_level] => fasting exceptions(see days table)
+  [pbase] => base pday used for calculating tone and matins gospel
+  [tone] => Sunday tone
+  [no_matins_gospel] => boolean to ignore matins gospel (minor feasts on Sundays)
+  [matins_gospel] => Sunday matins gospel
+  [no_paremias] => boolean to ignore paremias (Lent)
+  [get_paremias] => boolean to get paremias from next day (Lent)
+
+------------------------------------------------
+values returned by retrieveReadings() function
+  [types] => array of types (Epistle, Gospel, etc.) for each reading
+  [descs] => array of extra notes
+  [books] => array of pericope books
+  [displays] => array of full displays
+  [sdisplays] => array of abbreviated displays
+  [nums] => array of pericope numbers
+  [idx] => array of indexes to keep in order:
+	1-99 lenten matins
+	100+ 1st hour (lent)
+	200+ 3rd hour
+	300+ 6th hour
+	400+ 9th hour
+	500+ lenten vespers
+	600+ vespers
+	700+ matins
+	800+ liturgy epistles
+	900+ liturgy gospels
+	100+ post-liturgy
+
+------------------------------------------------
+values returned by retrievePericope() function
+  [display] => full book chapter.verse display
+  [sdisplay] => abbreviated book chapter.verse display
+  [desc] => note
+  [numbers] => array of chapter*1000 + verse
+  [texts] => array of scripture verses
+
+------------------------------------------------
+Index numbers for floating feasts:
+1001 Fathers of the first six ecumenical councils
+1002 Fathers of the seventh ecumenical council
+1003 Demetrius Saturday
+1004 Synaxis of unmercenaries
+1005 Saturday before Elevation when moved to September 13
+1006 Saturday before Elevation on Saturday
+1007 Sunday before Elevation
+1008 Saturday after Elevation
+1009 Sunday after Elevation
+1010 Sunday of Forefathers
+1011 Saturday before Nativity standalone
+1012 Sunday before Nativity standalone
+1013 Royal Hours of Nativity when moved to Friday
+1014 Eve of Nativity standalone
+1015 Saturday before Nativity == Eve
+1016 Sunday before Nativity == Eve
+1017 Saturday after Nativity == Saturday before Theophany
+1018 Saturday after Nativity moved to Friday
+1019 Saturday after Nativity standalone
+1020 Sunday after Nativity moved to Monday
+1021 Sunday after Nativity standalone
+1022 Saturday before Theophany standalone
+1023 Saturday before Theophany moved to January 1
+1024 Sunday before Theophany standalone
+1025 Royal Hours of Theophany when moved to Friday
+1026 Eve of Theophany standalone
+1027 Saturday before Theophany == Eve
+1028 Sunday before Theophany == Eve
+1029 Saturday after Theophany
+1030 Sunday after Theophany
+1031 New Martyrs of Russia
+1032 Annunciation Paremias on Friday
+1033 Annunciation on Saturday
+1034 Annunciation on Sunday
+1035 Annunciation on Monday
+1036 Annunciation Paremias on Eve
+1037 Annunciation on Tuesday-Friday
