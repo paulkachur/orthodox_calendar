@@ -178,12 +178,13 @@ function __construct()
 	$r = $this->query($q);
 	$xp=array(); $xf=array(); $xn=array(); $xs=array();
 	$pname=""; $fname=""; $snote="";
-	$service=0; $feast_level=-2; $fast=0; $fast_level=0;
+	$service=0; $feast_level=-2; $saint_level=0; $fast=0; $fast_level=0;
 	while ($w=$this->fetch($r))
 	{ if ($w['daPsub']) { $w['daPname'] .= ": " . $w['daPsub']; }
 	  if ($w['daPname']) { $xp[]=$w['daPname']; }
 	  if ($w['daFname'] && (!$nomem || $w['daFname'] != "Memorial Saturday")) { $xf[]=$w['daFname']; }
 	  if ($w['daFlevel'] > $feast_level) { $feast_level=$w['daFlevel']; }
+	  if ($w['daSlevel'] > $saint_level) { $saint_level=$w['daSlevel']; }
 	  if ($w['daService'] > $service) { $service=$w['daService']; }
 	  if ($w['daSnote']) { $xn[]=$w['daSnote']; }
 	  if ($w['daSaint']) { $xs[]=$w['daSaint']; }
@@ -244,6 +245,7 @@ function __construct()
 	$arr['saint'] = $saint;
 	$arr['service'] = $service;
 	$arr['feast_level'] = $feast_level;
+	$arr['saint_level'] = $saint_level;
 	$arr['fast'] = $fast;
 	$arr['fast_level'] = $fast_level;
 	$arr['pbase'] = $pbase;
