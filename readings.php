@@ -46,13 +46,16 @@ if ($day['fast'] || $day['fast_level']==11)
   $saint=$day['saint'];
   if ($day['tone']) {$pname .= " &mdash; Tone {$day['tone']}";}
 
-  if ($day['feast_level']>1)
-  { $f=$day['feast_level']; $img="<img src=\"lib/typikon$f.svg\" alt=\"$f\" class=\"typikon\" /> ";
-    if ($saint)
-    { $xa=explode("; ", $saint);
-      if (count($xa)>1) {$saint=$xa[0] . "; " . $img . $xa[1];}
-      else {$saint=$img . $saint;} }
-    else {$fname=$img . $fname;} }
+  if ($day['feast_level']>1 && $fname)
+  { $f=$day['feast_level'];
+    $img="<img src=\"lib/typikon$f.svg\" alt=\"$f\" class=\"typikon\" /> ";
+    $fname=$img . $fname; }
+  if ($day['saint_level']>1 && $saint)
+  { $f=$day['saint_level'];
+    $img="<img src=\"lib/typikon$f.svg\" alt=\"s$f\" class=\"typikon\" /> ";
+    $xa=explode("; ", $saint);
+    if (count($xa)>1) {$saint=$xa[0] . "; " . $img . $xa[1];}
+    else {$saint=$img . $saint;} }
 
   print "<p><b>$pname.</b> ";
   if ($snote) {print "$snote. ";}
