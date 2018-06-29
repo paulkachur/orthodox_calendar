@@ -298,7 +298,7 @@ insert into readings values(0, 0, 0, -15, 'Epistle', 'Theotokos', 'Apostol', '32
 insert into readings values(0, 0, 0, -15, 'Gospel', 'Theotokos', 'Luke', '54|58', 921, 0);
 insert into readings values(0, 0, 0, -14, 'Epistle', '', 'Apostol', '321ctr', 811, 0);
 insert into readings values(0, 0, 0, -14, 'Gospel', '', 'Mark', '47', 911, 0);
-insert into readings values(0, 0, 0, -14, 'Epistle', 'St Mary', 'Apostol', '208', 821, 0);
+insert into readings values(0, 0, 0, -14, 'Epistle', 'St Mary', 'Apostol', '208e', 821, 0);
 insert into readings values(0, 0, 0, -14, 'Gospel', 'St Mary', 'Luke', '33', 921, 0);
 insert into readings values(0, 0, 0, -13, '6th Hour', '', 'OT', '150', 301, 0);
 insert into readings values(0, 0, 0, -13, 'Vespers', '', 'OT', '27', 501, 0);
