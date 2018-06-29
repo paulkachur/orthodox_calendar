@@ -60,11 +60,15 @@ function __construct()
 	return $arr; }
 
   function retrieveXceptions($m, $d, $y)
-    { $arr=array($m, $d, "");
+    { $arr=array($m, $d, "", 0);
       $q="select * from xceptions where xcYear='$y' and xcMonth='$m' and xcDay='$d'";
       $r=$this->query($q);
       if ($w = $r->fetch_array())
-	{ $arr[0]=$w['xcNewMonth']; $arr[1]=$w['xcNewDay']; $arr[2]=$w['xcNote']; }
+	{ $arr[0]=$w['xcNewMonth']; $arr[1]=$w['xcNewDay']; $arr[2]=$w['xcNote'];
+	  if ($arr[1] < 99)
+	  { $q = "select * from days where daMonth='{$arr[0]}' and daDay='{$arr[1]}'";
+	    $w=$this->query_fetch($q);
+	    $arr[3] = $w['daFexc']; } }
       return $arr; }
 
   function calculatePent($p)
@@ -169,6 +173,7 @@ function __construct()
 	$menaion_month=$xa[0];
 	$menaion_day=$xa[1];
 	$menaion_note=$xa[2];
+	$menaion_fexc=$xa[3];
 // get records for pday and date from days table
 	if ($fday && $fday != 499) {$xf = "or daPday='$fday'";} else {$xf="";}
 	$q = "select * from days where (daPday='$pday' $xf) or (daMonth='$m' and daDay='$d')";
@@ -190,6 +195,7 @@ function __construct()
 	  if ($w['daSaint']) { $xs[]=$w['daSaint']; }
 	  if ($w['daFast'] > $fast) { $fast=$w['daFast']; }
 	  if ($w['daFexc'] > $fast_level) { $fast_level=$w['daFexc']; } }
+	if ($menaion_fexc > $fast_level) { $fast_level=$menaion_fexc; }
 	if ($noparemias && ($dow==2 || $dow==4)) { $xn[]="Presanctified Liturgy"; }
 	if (count($xp)>1) { $pname=implode("; ", $xp); } elseif (count($xp)) { $pname=$xp[0]; }
 	if (count($xf)>1) { $fname=implode("; ", $xf); } elseif (count($xf)) { $fname=$xf[0]; }
@@ -390,7 +396,10 @@ The heart of this system is the concept of a "paschal year," which begins with Z
 	$nodaily[]=$arr['sun_bef_theophany'];
 	$nodaily[]=$arr['sun_aft_theophany'];
 	$nodaily[]=$arr['theophany']-5;
-	$nodaily[]=$arr['theophany']-1;
+
+	if ($arr['sat_bef_theophany'] != ($arr['theophany']-1))
+	{ $nodaily[]=$arr['theophany']-1; }
+
 	$nodaily[]=$arr['theophany'];
 	if ($arr['sat_aft_theophany']==$arr['theophany']+1) {$nodaily[]=$arr['theophany']+1;}
 //	if ($arr['finding']==-43) {$nodaily[]=$arr['finding'];}
@@ -475,6 +484,33 @@ The heart of this system is the concept of a "paschal year," which begins with Z
 	    $sdisplays[] = $w['sdisplay'];
 	    $nums[] = $w['reNum'];
 	    $idx[] = $w['reIndex']; }
+// if Saturday bef Theophany is Eve, move daily readings
+	if ($day['fday'] == 1027)
+	  { $i = array_search("811", $idx);
+	    $j = array_search("911", $idx);
+	        $xt=array($types[0], $types[1], $types[$i], $types[$j]);
+	        $xd=array($descs[0], $descs[1], $descs[$i], $descs[$j]);
+	        $xb=array($books[0], $books[1], $books[$i], $books[$j]);
+	        $xy=array($displays[0], $displays[1], $displays[$i], $displays[$j]);
+	        $xs=array($sdisplays[0], $sdisplays[1], $sdisplays[$i], $sdisplays[$j]);
+	        $xn=array($nums[0], $nums[1], $nums[$i], $nums[$j]);
+	        $xi=array($idx[0], $idx[1], $idx[$i], $idx[$j]); 
+		foreach ($types as $k=>$v)
+		{ if ($k > 1 && $k != $i && $k != $j)
+		  { $xt[]=$types[$k];
+		    $xd[]=$descs[$k];
+		    $xb[]=$books[$k];
+		    $xy[]=$displays[$k];
+		    $xs[]=$sdisplays[$k];
+		    $xn[]=$nums[$k];
+		    $xi[]=$idx[$k]; } }
+		$types=$xt;
+	        $descs=$xd;
+	        $books=$xb;
+	        $displays=$xy;
+	        $sdisplays=$xs;
+	        $nums=$xn;
+	        $idx=$xi; }
 // if lent, matins gospel moves to top
 	if ($day['pday'] > -42 && $day['pday'] < -7 && $day['feast_level'] < 7)
 	  { $i = array_search("Matins Gospel", $types);
