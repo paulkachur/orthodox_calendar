@@ -49,7 +49,9 @@ if ($day['fast'] || $day['fast_level']==11)
   if ($day['feast_level']>1 && $fname)
   { $f=$day['feast_level'];
     $img="<img src=\"lib/typikon$f.svg\" alt=\"$f\" class=\"typikon\" /> ";
-    $fname=$img . $fname; }
+    $xa=explode("; ", $fname);
+    if (count($xa)>1) {$fname=$xa[0] . "; " . $img . $xa[1];}
+    else {$fname=$img . $fname;} }
   if ($day['saint_level']>1 && $saint)
   { $f=$day['saint_level'];
     $img="<img src=\"lib/typikon$f.svg\" alt=\"s$f\" class=\"typikon\" /> ";
