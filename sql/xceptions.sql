@@ -36,7 +36,7 @@ insert into xceptions values(0, 2019, 3, 31, 99, 99, '(Note: The service for St 
 insert into xceptions values(0, 2019, 4, 8, 4, 7, '(Note: The service for St Tikhon is held today.)', 0);
 insert into xceptions values(0, 2019, 4, 7, 99, 99, '(Note: The service for St Tikhon is transferred to April 8.)', 0);
 insert into xceptions values(0, 2019, 4, 29, 4, 23, '(Note: The service for St George is held today.)', 0);
-insert into xceptions values(0, 2019, 4, 23, 99, 99, '(Note: The service for St George is transferred to May 1.)', 0);
+insert into xceptions values(0, 2019, 4, 23, 99, 99, '(Note: The service for St George is transferred to April 29.)', 0);
 insert into xceptions values(0, 2019, 4, 25, 99, 99, '(Note: The service for St Mark is held whenever the Superior wishes.)', 0);
 insert into xceptions values(0, 2019, 7, 1, 6, 30, '(Note: The service for the Synaxis of the Holy Apostles is held today.)', 0);
 insert into xceptions values(0, 2019, 6, 30, 99, 99, '(Note: The service for the Synaxis of the Holy Apostles is transferred to July 1.)', 0);

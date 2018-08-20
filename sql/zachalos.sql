@@ -506,7 +506,7 @@ insert into zachalos values(0, '73ctr', 'Apostol', '1 John 4.12-19', '1 John 4.1
 insert into zachalos values(0, '74', 'Apostol', '1 John 4.20-5.21', '1 John 4.20-5.21', 'Thursday of 35th', '', 'My beloved, if', '', '1John_4020_5021', '', 0);
 insert into zachalos values(0, '74e', 'Apostol', '1 John 4.20-5.5', '1 John 4.20-5.5', 'Paremia 3', '', 'My beloved, if', '', '1John_4020_5005', '', 0);
 insert into zachalos values(0, '75', 'Apostol', '2 John 1.1-13', '2 John 1.1-13', 'Friday of 35th', '', '', '', '2John_1001_1013', '', 0);
-insert into zachalos values(0, '76', 'Apostol', '3 John 1.1-14', '3 John 1.1-14', 'Monday of Cheesefare', '', '', '', '3John_1001_1014', '', 0);
+insert into zachalos values(0, '76', 'Apostol', '3 John 1-15', '3 John 1-15', 'Monday of Cheesefare', '', '', '', '3John_1001_1015', '', 0);
 insert into zachalos values(0, '77', 'Apostol', 'Jude 1-10', 'Jude 1-10', 'Tuesday of Cheesefare', '', '','' , 'Jude_1001_1010', '', 0);
 insert into zachalos values(0, '77e', 'Apostol', 'Jude 1-7, 17-25', 'Jude 1-7, 17-25', 'Luke', '', '', '', 'Jude_1001_1007|Jude_1017_1025', '', 0);
 insert into zachalos values(0, '78', 'Apostol', 'Jude 11-25', 'Jude 11-25', 'Thursday of Cheesefare', '', '', '', 'Jude_1011_1025', '', 0);
@@ -681,7 +681,7 @@ insert into zachalos values(0, '225', 'Apostol', 'Ephesians 4.14-19', 'Eph 4.14-
 insert into zachalos values(0, '226', 'Apostol', 'Ephesians 4.17-25', 'Eph 4.17-25', 'Friday of 17th', '', 'Brethren, this I say', '', 'Eph_4017_4025', '.&rdquo;', 0);
 insert into zachalos values(0, '227', 'Apostol', 'Ephesians 4.25-32', 'Eph 4.25-32', 'Monday of 18th', '', 'Brethren,', '', 'Eph_4025_4032', '', 0);
 insert into zachalos values(0, '228', 'Apostol', 'Ephesians 5.1-8', 'Eph 5.1-8', 'Saturday of 30th', '', 'Brethren,', '', 'Eph_5001_5008', '', 0);
-insert into zachalos values(0, '229', 'Apostol', 'Ephesians 5.8-19', 'Eph 5.8-19', '26th Sunday, Monday after Pentecost', '', 'Brethren, walk', '', 'Eph_5008_5019', '.', 0);
+insert into zachalos values(0, '229', 'Apostol', 'Ephesians 5.9-19', 'Eph 5.9-19', '26th Sunday, Monday after Pentecost', '', 'Brethren, walk', '', 'Eph_5008_5019', '.', 0);
 insert into zachalos values(0, '230', 'Apostol', 'Ephesians 5.20-26', 'Eph 5.20-26', 'Tuesday of 18th', '', 'Brethren, give', '', 'Eph_5020_5026', '.', 0);
 insert into zachalos values(0, '230e', 'Apostol', 'Ephesians 5.20-33', 'Eph 5.20-33', 'Marriage', '', 'Brethren, give', '', 'Eph_5020_5033', '.', 0);
 insert into zachalos values(0, '231', 'Apostol', 'Ephesians 5.25-33', 'Eph 5.25-33', 'Wednesday of 18th', '', 'Brethren,', '', 'Eph_5025_5033', '.', 0);
