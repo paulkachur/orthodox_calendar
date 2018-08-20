@@ -46,7 +46,7 @@ function __construct()
 	$m = floor(($z + $e + 114) / 31); $d = (($z + $e + 114) % 31) + 1;
 	return $jg+gregoriantojd($m,$d,$y); }
 
-// get day of week (0-7) from pday
+// get day of week (0-6) from pday
   function dow($pday)
     { return (7 + ($pday % 7)) % 7; }
 
@@ -160,6 +160,7 @@ function __construct()
 	    else { $gday = $pday+$jump; } }
 // if today is a floating feast
 	$fday = array_search($pday, $year['floats']);
+	if ($m==1 && $d>24 && $dow==0) {$fday=1031;}
 // if today is is involved in a lenten paremia swap
 	if (array_search($pday, $year['noparemias'])) {$noparemias=true;} else {$noparemias=false;}
 	if (array_search($pday, $year['getparemias'])) {$getparemias=true;} else {$getparemias=false;}
@@ -376,9 +377,6 @@ The heart of this system is the concept of a "paschal year," which begins with Z
 	    $floats[1026]=$arr['theophany']-1; }
 	$floats[1029] = $arr['sat_aft_theophany'];
 	$floats[1030] = $arr['sun_aft_theophany'];
-	$xp = gregoriantojd(1,31,$y) - $pascha; $xd=$this->dow($xp);
-	  if ($xd) {$xp = $xp - 7 + ((7 - $xd) % 7); }
-	  $floats[1031]=$xp;
 	$no_daily_ann=false;
 	if ($arr['annunciation_weekday']==6)
 	  { $floats[1032]=$arr['annunciation']-1;

@@ -22,8 +22,8 @@ Defines info on pdays as well as mini menaion
 	8 Major feast Lord
   daService int -- not used yet, will provide liturgical codes
   daSnote varchar(64) -- service note (as on St Tikhon calendar)
-  daSaint varchar(255) -- at least one saint for display or typikon symbol
-  daSlevel int -- level of saint: see daFlevel for values
+  daSaint varchar(128) -- at least one saint for display or typikon symbol
+  daSlevel int -- level of saint (see daFlevel)
   daFast int -- fasting level:
 	0 neutral
 	1 fast
@@ -103,6 +103,7 @@ values returned by calculateYear() function
   [annunciation] => pday of 3/25
   [annunciation_weekday] => weekday of 3/25 (0=Sunday)
   [peterpaul] => pday of 6/29
+  [beheading] => pday of 8/29
   [nativity_theotokos] => pday of 9/8
   [elevation] => pday of 9/14
   [elevation_weekday] => weekday of 9/14 (0=Sunday)
@@ -184,6 +185,18 @@ values returned by retrieveReadings() function
   [displays] => array of full displays
   [sdisplays] => array of abbreviated displays
   [nums] => array of pericope numbers
+  [idx] => array of indexes to keep in order:
+	1-99 lenten matins
+	100+ 1st hour (lent)
+	200+ 3rd hour
+	300+ 6th hour
+	400+ 9th hour
+	500+ lenten vespers
+	600+ vespers
+	700+ matins
+	800+ liturgy epistles
+	900+ liturgy gospels
+	100+ post-liturgy
 
 ------------------------------------------------
 values returned by retrievePericope() function
