@@ -64,6 +64,7 @@ if ($day['fast'] || $day['fast_level']==11)
   if ($fname) {print "<b>$fname</b>. ";}
   if ($saint) {print "$saint. ";}
   if ($day['menaion_note']) {print $day['menaion_note'];}
+  if ($day['katavasia']) {print " Katavasia: ".$day['katavasia'].".";}
   print "</p>\n"; ?>
 
 <div style="font-size:18px; line-height:150%; text-align:center; padding-top: .33em;">
