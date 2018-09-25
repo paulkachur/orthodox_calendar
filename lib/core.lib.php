@@ -183,7 +183,7 @@ function __construct()
 
 	$r = $this->query($q);
 	$xp=array(); $xf=array(); $xn=array(); $xs=array();
-	$pname=""; $fname=""; $snote="";
+	$pname=""; $fname=""; $snote=""; $kata="";
 	$service=0; $feast_level=-2; $saint_level=0; $fast=0; $fast_level=0;
 	while ($w=$this->fetch($r))
 	{ if ($w['daPsub']) { $w['daPname'] .= ": " . $w['daPsub']; }
@@ -195,13 +195,17 @@ function __construct()
 	  if ($w['daSnote']) { $xn[]=$w['daSnote']; }
 	  if ($w['daSaint']) { $xs[]=$w['daSaint']; }
 	  if ($w['daFast'] > $fast) { $fast=$w['daFast']; }
-	  if ($w['daFexc'] > $fast_level) { $fast_level=$w['daFexc']; } }
+	  if ($w['daFexc'] > $fast_level) { $fast_level=$w['daFexc']; }
+	  if (!$kata) { $kata=$w['daKatavasia']; } }
 	if ($menaion_fexc > $fast_level) { $fast_level=$menaion_fexc; }
 	if ($noparemias && ($dow==2 || $dow==4)) { $xn[]="Presanctified Liturgy"; }
 	if (count($xp)>1) { $pname=implode("; ", $xp); } elseif (count($xp)) { $pname=$xp[0]; }
 	if (count($xf)>1) { $fname=implode("; ", $xf); } elseif (count($xf)) { $fname=$xf[0]; }
 	if (count($xn)>1) { $snote=implode("; ", $xn); } elseif (count($xn)) { $snote=$xn[0]; }
 	if (count($xs)>1) { $saint=implode("; ", $xs); } elseif (count($xs)) { $saint=$xs[0]; }
+	if ($dow < 1 || $feast_level > 2 || $saint_level > 2)
+	{ if (!$kata) { $kata="&ldquo;I will open my mouth...&rdquo;"; } }
+	else { $kata=""; }
 // calculate sunday tone
 	if ($pday < 0) { $pbase=$vday; } else { $pbase=$pday; }
 	if ($pday > -9 && $pday < 7) { $tone=0; }
@@ -261,6 +265,7 @@ function __construct()
 	$arr['matins_gospel'] = $matins_gospel;
 	$arr['no_paremias'] = $noparemias;
 	$arr['get_paremias'] = $getparemias;
+	$arr['katavasia'] = $kata;
 	return $arr; }
 
 /*

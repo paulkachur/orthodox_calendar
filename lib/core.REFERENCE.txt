@@ -43,6 +43,7 @@ Defines info on pdays as well as mini menaion
 	9 Strict Fast
 	10 No overrides
 	11 Fast Free
+  daKatavasia varchar(16) -- katavasia for canon (blank=common)
   daFlag tinyint -- for housekeeping
 
 -----------------------------------------
@@ -176,6 +177,7 @@ values returned by calculateDay() function
   [matins_gospel] => Sunday matins gospel
   [no_paremias] => boolean to ignore paremias (Lent)
   [get_paremias] => boolean to get paremias from next day (Lent)
+  [katavasia] => katavasia for canon
 
 ------------------------------------------------
 values returned by retrieveReadings() function
