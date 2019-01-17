@@ -107,6 +107,8 @@ foreach ($pericope['numbers'] as $k=>$v)
 
 <p><span class="rdg" onclick="cexec();">Return to calendar</span></p>
 
+<p>You may view source code and documentation for this program at <a href="https://github.com/paulkachur/orthodox_calendar" target="_blank">https://github.com/paulkachur/orthodox_calendar</a>.</p>
+
 </body>
 </html>
 <?php } else {print "<h3>You must come here through the proper channels!</h3>";
