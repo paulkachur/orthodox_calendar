@@ -1005,3 +1005,6 @@ insert into zachalos values(0, '196', 'OT', 'Composite 21 - Isaiah 62.10-63.3, 7
 insert into zachalos values(0, '197', 'OT', 'Composite 22 - Zechariah 14.1, 4, 8-11', 'Composite 22', 'Ascension', '', '', '', 'Comp_22001_22001', '', 0);
 insert into zachalos values(0, '198', 'OT', 'Composite 23 - 3 [1] Kings 19.3-9, 11-13, 15, 16', 'Composite 23', 'Transfiguration', '', '', '', 'Comp_23001_23004', '', 0);
 insert into zachalos values(0, '199', 'OT', 'Composite 24 - Leviticus 26', 'Composite 24', 'New Year', '', '', '', 'Comp_24001_24002', '', 0);
+
+insert into zachalos values(0, '200', 'OT', '3[1] Kings 8.22-25, 30-34, 46-49, 57-58; 9.3-5', '3 Kgs 8.22-25, 30-34, 46-49, 57-58; 9.3-5', 'royal passionbearers', '', '', '', '3Kg_8022_8025|3Kg_8030_8034|3Kg_8046_8049|3Kg_8057_8058|3Kg_9003_9005', '', 0);
+insert into zachalos values(0, '201', 'OT', 'Isaiah 61.1-3, 10-11; 62.1-5', 'Isa 61.1-3, 10-11; 62.1-5', 'royal passionbearers', '', '', '', 'Isa_61001_61003|Isa_61010_61011|Isa_62001_62005', '', 0);

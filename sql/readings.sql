@@ -1232,6 +1232,14 @@ insert into readings values(0, 7, 15, 999, 'Vespers', 'St Vladimir', 'OT', '157'
 insert into readings values(0, 7, 15, 999, 'Matins Gospel', '', 'John', '36', 721, 0);
 insert into readings values(0, 7, 15, 999, 'Epistle', 'St Vladimir', 'Apostol', '200', 821, 0);
 insert into readings values(0, 7, 15, 999, 'Gospel', 'St Vladimir', 'John', '35ctr', 921, 0);
+
+insert into readings values(0, 7, 17, 999, 'Vespers', '', 'OT', '100', 604, 0);
+insert into readings values(0, 7, 17, 999, 'Vespers', '', 'OT', '200', 605, 0);
+insert into readings values(0, 7, 17, 999, 'Vespers', '', 'OT', '201', 606, 0);
+insert into readings values(0, 7, 17, 999, 'Matins Gospel', '', 'Matthew', '36', 721, 0);
+insert into readings values(0, 7, 17, 999, 'Epistle', 'Passionbearers', 'Apostol', '99', 821, 0);
+insert into readings values(0, 7, 17, 999, 'Gospel', 'Passionbearers', 'John', '52', 921, 0);
+
 insert into readings values(0, 7, 19, 999, 'Vespers', '', 'OT', '100', 604, 0);
 insert into readings values(0, 7, 19, 999, 'Vespers', '', 'OT', '102', 605, 0);
 insert into readings values(0, 7, 19, 999, 'Vespers', '', 'OT', '101', 606, 0);
