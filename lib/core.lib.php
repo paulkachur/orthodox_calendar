@@ -568,7 +568,7 @@ The heart of this system is the concept of a "paschal year," which begins with Z
 	$prefixb=$w['zaPrefixb']; // second block may have its own prefix
 	$suffix=$w['zaSuffix'];
 // separate discontinuous readings into blocks
-	$blocks = explode("|", $w[zaVerses]);
+	$blocks = explode("|", $w['zaVerses']);
 	$num_blocks=count($blocks);
 	$current_block=0;
 	foreach($blocks as $v)
