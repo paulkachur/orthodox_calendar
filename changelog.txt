@@ -1,0 +1,10 @@
+2019-03-07
+core.lib.php: suppressed presanctified note when annunciation falls on wed or fri of lent
+readings.sql: moved paschal vespers gospel to pascha, per St Tikhon 2020 calendar and Orthodox experience; added departed readings for radonitsa
+days.sql: added Leavetaking Pascha to pday 38; made Martyrs Zeno and Zenas main saints for June 22
+
+----------------------------------------------------------------
+2019-02-18
+days.sql: added Royal Passionbearers on July 17
+zachalos.sql: added 2 OT entries for Royal Passionbearers
+readings.sql: added readings for Royal Passionbearers on July 17
