@@ -192,7 +192,7 @@ function __construct()
 	  if ($w['daFlevel'] > $feast_level) { $feast_level=$w['daFlevel']; }
 	  if ($w['daSlevel'] > $saint_level) { $saint_level=$w['daSlevel']; }
 	  if ($w['daService'] > $service) { $service=$w['daService']; }
-	  if ($w['daSnote']) { $xn[]=$w['daSnote']; }
+	  if ($w['daSnote'] && $pday != $year['annunciation']) { $xn[]=$w['daSnote']; }
 	  if ($w['daSaint']) { $xs[]=$w['daSaint']; }
 	  if ($w['daFast'] > $fast) { $fast=$w['daFast']; }
 	  if ($w['daFexc'] > $fast_level) { $fast_level=$w['daFexc']; }
