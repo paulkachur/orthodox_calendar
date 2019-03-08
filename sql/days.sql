@@ -136,7 +136,7 @@ INSERT INTO days VALUES (0, 34, 0, 0, 'Saturday of the 5th Sunday of Pascha', ''
 INSERT INTO days VALUES (0, 35, 0, 0, '6th Sunday of Pascha', '', 'Blind Man', 0, 0, '', '', 0, 0, 0, 'Ascension', 0);
 INSERT INTO days VALUES (0, 36, 0, 0, 'Monday of the 6th Sunday of Pascha', '', '', 0, 0, '', '', 0, 0, 0, 'Ascension', 0);
 INSERT INTO days VALUES (0, 37, 0, 0, 'Tuesday of the 6th Sunday of Pascha', '', '', 0, 0, '', '', 0, 0, 0, 'Ascension', 0);
-INSERT INTO days VALUES (0, 38, 0, 0, 'Leavetaking of Pascha', '', 'Forefeast of Ascension', 0, 0, '', '', 0, 1, 2, 'Ascension', 0);
+INSERT INTO days VALUES (0, 38, 0, 0, 'Wednesday of the 6th Sunday of Pascha', '', 'Leavetaking of Pascha / Forefeast of Ascension', 0, 0, '', '', 0, 1, 2, 'Ascension', 0);
 INSERT INTO days VALUES (0, 39, 0, 0, 'The Ascension of our Lord, God, and Saviour Jesus Christ', '', 'Ascension of the Lord', 8, 0, '', '', 0, 0, 0, 'Pentecost (2)', 0);
 INSERT INTO days VALUES (0, 40, 0, 0, 'Friday of the 6th Sunday of Pascha', '', '', 0, 0, '', '', 0, 1, 1, 'Ascension', 0);
 INSERT INTO days VALUES (0, 41, 0, 0, 'Saturday of the 6th Sunday of Pascha', '', '', 0, 0, '', '', 0, 0, 0, 'Ascension', 0);
@@ -629,7 +629,7 @@ INSERT INTO days VALUES (0, 999, 6, 18, '', '', '', 0, 0, '', 'Martyr Leontius a
 INSERT INTO days VALUES (0, 999, 6, 19, '', '', 'Holy Apostle Jude, Brother of the Lord', 4, 0, '', '', 0, 0, 0, '', 0);
 INSERT INTO days VALUES (0, 999, 6, 20, '', '', '', 0, 0, '', 'Hieromartyr Methodius, Bishop of Patar', 0, 0, 0, '', 0);
 INSERT INTO days VALUES (0, 999, 6, 21, '', '', '', 0, 0, '', 'Martyr Julian of Tarsus', 0, 0, 0, '', 0);
-INSERT INTO days VALUES (0, 999, 6, 22, '', '', '', 0, 0, '', 'Hieromartyr Eusebius, Bishop of Samosata', 0, 0, 0, '', 0);
+INSERT INTO days VALUES (0, 999, 6, 22, '', '', '', 0, 0, '', 'Martyrs Zeno and Zenas', 0, 0, 0, '', 0);
 INSERT INTO days VALUES (0, 999, 6, 23, '', '', '', 0, 0, '', 'Martyr Agrippina of Rome', 0, 0, 0, '', 0);
 INSERT INTO days VALUES (0, 999, 6, 24, '', '', 'Nativity of St John the Baptist', 6, 0, '', '', 0, 0, 2, '', 0);
 INSERT INTO days VALUES (0, 999, 6, 25, '', '', '', 0, 0, '', 'Virgin Martyr Febronia; Peter and Fevronia of Murom', 3, 0, 0, '', 0);
