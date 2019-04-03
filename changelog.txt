@@ -1,3 +1,9 @@
+2019-04-02
+zachalos.sql: added 105|106 Luke for new martyrs of Russia
+readings.sql: added readings for new martyrs, adjusted some index levels
+days.sql: adjusted some feast names
+
+----------------------------------------------------------------
 2019-03-07
 core.lib.php: suppressed presanctified note when annunciation falls on wed or fri of lent
 readings.sql: moved paschal vespers gospel to pascha, per St Tikhon 2020 calendar and Orthodox experience; added departed readings for radonitsa
