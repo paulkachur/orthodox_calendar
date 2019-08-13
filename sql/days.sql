@@ -673,7 +673,7 @@ INSERT INTO days VALUES (0, 999, 8, 1, '', '', 'Procession of the Lifegiving Cro
 INSERT INTO days VALUES (0, 999, 8, 2, '', '', '', 0, 0, '', 'Trans. Rel. Protomartyr Stephen; Bl. Vasily, Fool-for-Christ', 3, 4, 0, 'Exaltation', 0);
 INSERT INTO days VALUES (0, 999, 8, 3, '', '', '', 0, 0, '', 'Ven. Isaac, Dalmatius, Faustus; Ven. Anthony the Roman of Novgorod', 3, 4, 0, 'Exaltation', 0);
 INSERT INTO days VALUES (0, 999, 8, 4, '', '', '', 0, 0, '', 'Seven Sleepers of Ephesus', 0, 4, 0, 'Exaltation', 0);
-INSERT INTO days VALUES (0, 999, 8, 5, '', '', '', 0, 0, '', 'Martyr Eusignius of Antioch', 2, 4, 0, 'Exaltation', 0);
+INSERT INTO days VALUES (0, 999, 8, 5, '', '', 'Forefeast of Transfiguration', 0, 0, '', 'Martyr Eusignius of Antioch', 2, 4, 0, 'Exaltation', 0);
 INSERT INTO days VALUES (0, 999, 8, 6, '', '', 'Transfiguration of Our Lord', 8, 0, '', '', 0, 4, 4, 'Exaltation', 0);
 INSERT INTO days VALUES (0, 999, 8, 7, '', '', '', 0, 0, '', 'Martyr Dometius of Persia', 0, 4, 0, 'Transfiguration', 0);
 INSERT INTO days VALUES (0, 999, 8, 8, '', '', '', 0, 0, '', 'St Emilian the Confessor', 0, 4, 0, 'Transfiguration', 0);
@@ -682,7 +682,7 @@ INSERT INTO days VALUES (0, 999, 8, 10, '', '', '', 0, 0, '', 'Holy Martyr and A
 INSERT INTO days VALUES (0, 999, 8, 11, '', '', '', 0, 0, '', 'Holy Martyr and Archdeacon Euplus of Catania', 0, 4, 0, 'Transfiguration', 0);
 INSERT INTO days VALUES (0, 999, 8, 12, '', '', '', 0, 0, '', 'Martyrs Anicletus and Photius of Nicomedia', 0, 4, 0, 'Transfiguration', 0);
 INSERT INTO days VALUES (0, 999, 8, 13, '', '', 'Leavetaking of Transfiguration; St Tikhon of Zadonsk', 4, 0, '', '', 0, 4, 4, 'Exaltation', 0);
-INSERT INTO days VALUES (0, 999, 8, 14, '', '', '', 0, 0, '', 'Prophet Micah', 2, 4, 0, 'Dormition', 0);
+INSERT INTO days VALUES (0, 999, 8, 14, '', '', 'Forefeast of Dormition', 0, 0, '', 'Prophet Micah', 2, 4, 0, 'Dormition', 0);
 INSERT INTO days VALUES (0, 999, 8, 15, '', '', 'Dormition of the Most-Holy Theotokos', 7, 0, '', '', 0, 0, 2, 'Dormition', 0);
 INSERT INTO days VALUES (0, 999, 8, 16, '', '', 'Image of Christ Not Made by Hands', 3, 0, '', '', 0, 0, 0, 'Dormition', 0);
 INSERT INTO days VALUES (0, 999, 8, 17, '', '', '', 0, 0, '', 'Martyr Myron, Presbyter of Cyzicus', 0, 0, 0, 'Dormition', 0);
@@ -706,7 +706,7 @@ INSERT INTO days VALUES (0, 999, 9, 3, '', '', '', 0, 0, '', 'Hieromartyr Anthim
 INSERT INTO days VALUES (0, 999, 9, 4, '', '', '', 0, 0, '', 'Hieromartyr Babylas, Bishop of Antioch', 0, 0, 0, 'Exaltation', 0);
 INSERT INTO days VALUES (0, 999, 9, 5, '', '', '', 0, 0, '', 'Prophet Zachariah and Elizabeth', 2, 0, 0, 'Exaltation', 0);
 INSERT INTO days VALUES (0, 999, 9, 6, '', '', '', 0, 0, '', 'Miracle of Archangel Michael at Colossae', 2, 0, 0, 'Exaltation', 0);
-INSERT INTO days VALUES (0, 999, 9, 7, '', '', '', 0, 0, '', 'Martyr Sozon of Cilicia; St John, Archbishop of Novgorod', 3, 0, 0, 'Exaltation', 0);
+INSERT INTO days VALUES (0, 999, 9, 7, '', '', 'Forefeast of Nativity', 0, 0, '', 'Martyr Sozon of Cilicia; St John, Archbishop of Novgorod', 3, 0, 0, 'Exaltation', 0);
 INSERT INTO days VALUES (0, 999, 9, 8, '', '', 'Nativity of the Most-Holy Theotokos', 7, 0, '', '', 0, 0, 2, 'Exaltation', 0);
 INSERT INTO days VALUES (0, 999, 9, 9, '', '', '', 0, 0, '', 'Righteous Joachim and Anna; Ven. Joseph of Volotsk', 3, 0, 0, 'Exaltation', 0);
 INSERT INTO days VALUES (0, 999, 9, 10, '', '', '', 0, 0, '', 'Martyrs Menodora, Metrodora, Nymphodora', 0, 0, 0, 'Exaltation', 0);
@@ -780,7 +780,7 @@ INSERT INTO days VALUES (0, 999, 11, 16, '', '', 'Holy Apostle and Evangelist Ma
 INSERT INTO days VALUES (0, 999, 11, 17, '', '', '', 0, 0, '', 'St Gregory the Wonderworker; Ven. Nikon of Radonezh', 3, 5, 0, '', 0);
 INSERT INTO days VALUES (0, 999, 11, 18, '', '', '', 0, 0, '', 'Martyrs Platon and Roman', 0, 5, 0, '', 0);
 INSERT INTO days VALUES (0, 999, 11, 19, '', '', '', 0, 0, '', 'Prophet Obadiah; Ven. Barlaam and Joasaph', 3, 5, 0, '', 0);
-INSERT INTO days VALUES (0, 999, 11, 20, '', '', '', 0, 0, '', 'Ven. Gregory Decapolites', 0, 5, 0, '', 0);
+INSERT INTO days VALUES (0, 999, 11, 20, '', '', 'Forefeast of Entry', 0, 0, '', 'Ven. Gregory Decapolites', 0, 5, 0, '', 0);
 INSERT INTO days VALUES (0, 999, 11, 21, '', '', 'Entry of the Most-Holy Theotokos into the Temple', 7, 0, '', '', 0, 5, 2, 'Nativity', 0);
 INSERT INTO days VALUES (0, 999, 11, 22, '', '', '', 0, 0, '', 'Apostles of the 70 Philemon, Archippus, Apphia; St Michael, Prince of Tver', 2, 5, 0, 'Nativity', 0);
 INSERT INTO days VALUES (0, 999, 11, 23, '', '', 'Rt. Blv. Great Prince Alexander Nevsky', 3, 0, '', '', 0, 5, 0, 'Nativity', 0);
