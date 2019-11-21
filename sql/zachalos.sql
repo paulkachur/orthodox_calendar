@@ -326,6 +326,7 @@ insert into zachalos values(0, '102', 'Luke', 'Luke 20.27-44', 'Luke 20.27-44', 
 insert into zachalos values(0, '103', 'Luke', 'Luke 20.46-21.4', 'Luke 20.46-21.4', 'Saturday of 34 Sunday', '', 'The Lord said to His disciples: ', '', 'Luke_20046_21004', '', 0);
 insert into zachalos values(0, '104', 'Luke', 'Luke 21.5-7, 10-11, 20-24', 'Luke 21.5-7, 10-11, 20-24', 'Wednesday of 29 Sunday', '', 'At that time, as some spoke of the temple to Jesus,', '', 'Luke_21005_21007|Luke_21010_21011|Luke_21020_21024', '', 0);
 insert into zachalos values(0, '105', 'Luke', 'Luke 21.8-9, 25-27, 33-36', 'Luke 21.8-9, 25-27, 33-36', 'Meatfare Saturday', '', 'The Lord said:', '', 'Luke_21008_21009|Luke_21025_21027|Luke_21033_21036', '', 0);
+insert into zachalos values(0, '105|106', 'Luke', 'Luke 21.8-19', 'Luke 21.8-19', 'New Martyrs of Russia', '', 'The Lord said:', '', 'Luke_21008_21019', '', 0);
 insert into zachalos values(0, '106', 'Luke', 'Luke 21.12-19', 'Luke 21.12-19', 'Tuesday of 29 Sunday', '', 'The Lord said to His disciples: beware of men,', '', 'Luke_21012_21019', '', 0);
 insert into zachalos values(0, '107', 'Luke', 'Luke 21.28-33', 'Luke 21.28-33', 'Thursday of 29 Sunday', '', 'The Lord said to His disciples:', '', 'Luke_21028_21033', '', 0);
 insert into zachalos values(0, '108', 'Luke', 'Luke 21.37-22.8', 'Luke 21.37-22.8', 'Friday of 29 Sunday', '', 'At that time, Jesus in the daytime', '', 'Luke_21037_22008', '', 0);
@@ -425,6 +426,7 @@ insert into zachalos values(0, '8', 'Apostol', 'Acts 3.11-16', 'Acts 3.11-16', '
 insert into zachalos values(0, '9', 'Apostol', 'Acts 3.19-26', 'Acts 3.19-26', 'Monday of 2d after Pascha', '', 'In those days, Peter said to the people: ', '', 'Acts_3019_3026', '', 0);
 insert into zachalos values(0, '10', 'Apostol', 'Acts 4.1-10', 'Acts 4.1-10', 'Tuesday of 2d after Pascha', '', 'In those days, as the Apostles', '', 'Acts_4001_4010', '', 0);
 insert into zachalos values(0, '11', 'Apostol', 'Acts 4.13-22', 'Acts 4.13-22', 'Wednesday of 2d after Pascha', '', 'In those days, when the Jews', '', 'Acts_4013_4022', '', 0);
+insert into zachalos values(0, '11e', 'Apostol', 'Acts 4.6-31', 'Acts 4.6-31', 'NMR', '', 'In those days, the rulers, elders, and scribes', '', 'Acts_4006_4031', '', 0);
 insert into zachalos values(0, '12', 'Apostol', 'Acts 4.23-31', 'Acts 4.23-31', 'Thursday of 2d after Pascha', '', 'In those days, when the Apostles were', '', 'Acts_4023_4031', '', 0);
 insert into zachalos values(0, '13', 'Apostol', 'Acts 5.1-11', 'Acts 5.1-11', 'Friday of 2d after Pascha', '', 'In those days,', '', 'Acts_5001_5011', '', 0);
 insert into zachalos values(0, '14', 'Apostol', 'Acts 5.12-20', 'Acts 5.12-20', '2d Sunday after Pascha', '', 'In those days,', '', 'Acts_5012_5020', '', 0);
@@ -760,6 +762,7 @@ insert into zachalos values(0, '295', 'Apostol', '2 Timothy 3.1-9', '2 Tim 3.1-9
 insert into zachalos values(0, '296', 'Apostol', '2 Timothy 3.10-15', '2 Tim 3.10-15', '33d Sunday Publican and Pharisee', '', 'My son Timothy,', '', '2Tim_3010_3015', '', 0);
 insert into zachalos values(0, '297', 'Apostol', '2 Timothy 3.16-4.4', '2 Tim 3.16-4.4', 'Tuesday of 28th', '', 'My son Timothy, all', '', '2Tim_3016_4004', '', 0);
 insert into zachalos values(0, '298', 'Apostol', '2 Timothy 4.5-8', '2 Tim 4.5-8', 'Sunday before Theophany', '', 'My son Timothy,', '', '2Tim_4005_4008', '', 0);
+insert into zachalos values(0, '298e', 'Apostol', '2 Timothy 4.1-8', '2 Tim 4.1-8', 'NMR', '', 'My son Timothy: ', '', '2Tim_4001_4008', '', 0);
 insert into zachalos values(0, '299', 'Apostol', '2 Timothy 4.9-22', '2 Tim 4.9-22', 'Wednesday of 28th', '', 'My son Timothy, be', '', '2Tim_4009_4022', '', 0);
 insert into zachalos values(0, '300', 'Apostol', 'Titus 1.1-4, 2.15-3.3, 3.12-15', 'Titus 1.1-4, 2.15-3.3, 3.12-15', 'Titus', '', '', '', 'Titus_1001_1004|Titus_2015_3003|Titus_3012_3015', '', 0);
 insert into zachalos values(0, '300ctr', 'Apostol', 'Titus 1.5-2.1', 'Titus 1.5-2.1', 'Thursday of 28th', '', 'My son Titus, for', '', 'Titus_1005_2001', '', 0);
@@ -799,6 +802,7 @@ insert into zachalos values(0, '328', 'Apostol', 'Hebrews 11.9-10, 17-23, 32-40'
 insert into zachalos values(0, '329', 'Apostol', 'Hebrews 11.17-23, 27-31', 'Heb 11.17-23, 27-31', 'Monday of 31st', '', 'Brethren, by', '', 'Heb_11017_11023|Heb_11027_11031', '', 0);
 insert into zachalos values(0, '329ctr', 'Apostol', 'Hebrews 11.24-26, 32-12.2', 'Heb 11.24-26, 32-12.2', '1st Sunday of Lent Orthodoxy', '', 'Brethren, by', '', 'Heb_11024_11026|Heb_11032_12002', '.', 0);
 insert into zachalos values(0, '330', 'Apostol', 'Hebrews 11.33-12.2', 'Heb 11.33-12.2', '1st Sunday All Saints', '', 'Brethren, through faith, the saints', '', 'Heb_11033_12002', '.', 0);
+insert into zachalos values(0, '330e', 'Apostol', 'Hebrews 11.33-40', 'Heb 11.33-40', 'NMR', '', 'Brethren, through faith, the saints', '', 'Heb_11033_11040', '', 0);
 insert into zachalos values(0, '331', 'Apostol', 'Hebrews 12.1-10', 'Heb 12.1-10', 'Martyrs of Sebaste', '', 'Brethren,', '', 'Heb_12001_12010', '', 0);
 insert into zachalos values(0, '331ctr', 'Apostol', 'Hebrews 12.6-13, 25-27', 'Heb 12.6-13, 25-27', 'Fear of Earthquakes', '', 'Brethren, the LORD loves whom', 'See', 'Heb_12006_12013|Heb_12025_12027', '', 0);
 insert into zachalos values(0, '332', 'Apostol', 'Hebrews 12.14-24', 'Heb 12.14-24', 'Fear of Fire', '', 'Brethren, pursue', '', 'Heb_12014_12024', '', 0);

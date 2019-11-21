@@ -1619,8 +1619,12 @@ insert into readings values(0, 0, 0, 1029, 'Gospel', 'Saturday after Theophany',
 insert into readings values(0, 0, 0, 1030, 'Epistle', 'Sunday after Theophany', 'Apostol', '224ctr', 801, 0);
 insert into readings values(0, 0, 0, 1030, 'Gospel', 'Sunday after Theophany', 'Matthew', '8', 901, 0);
 
-insert into readings values(0, 0, 0, 1031, 'Epistle', 'New Martyrs', 'Apostol', '99', 821, 0);
-insert into readings values(0, 0, 0, 1031, 'Gospel', 'New Martyrs', 'Luke', '105|106', 921, 0);
+insert into readings values(0, 0, 0, 1031, 'Vespers', 'New Martyrs', 'Apostol', '11e', 601, 0);
+insert into readings values(0, 0, 0, 1031, 'Vespers', 'New Martyrs', 'Apostol', '298e', 602, 0);
+insert into readings values(0, 0, 0, 1031, 'Vespers', 'New Martyrs', 'Apostol', '330e', 603, 0);
+insert into readings values(0, 0, 0, 1031, 'Matins Gospel', 'New Martyrs', 'Matthew', '36', 720, 0);
+insert into readings values(0, 0, 0, 1031, 'Epistle', 'New Martyrs', 'Apostol', '99', 820, 0);
+insert into readings values(0, 0, 0, 1031, 'Gospel', 'New Martyrs', 'Luke', '105|106', 920, 0);
 
 insert into readings values(0, 0, 0, 1032, 'Vespers', 'Annunciation', 'OT', '28', 604, 0);
 insert into readings values(0, 0, 0, 1032, 'Vespers', 'Annunciation', 'OT', '173', 605, 0);

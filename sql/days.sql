@@ -852,4 +852,4 @@ INSERT INTO days VALUES (0, 1027, 0, 0, '', '', 'Saturday before Theophany &ndas
 INSERT INTO days VALUES (0, 1028, 0, 0, '', '', 'Sunday before Theophany &ndash; Eve of Theophany', 0, 0, '', '', 0, 0, 0, '', 0);
 INSERT INTO days VALUES (0, 1029, 0, 0, '', '', 'Saturday after Theophany', 0, 0, '', '', 0, 0, 0, '', 0);
 INSERT INTO days VALUES (0, 1030, 0, 0, '', '', 'Sunday after Theophany', 0, 0, '', '', 0, 0, 0, '', 0);
-INSERT INTO days VALUES (0, 1031, 0, 0, '', '', 'New Martyrs and Confessors of Russia', 0, 0, '', '', 0, 0, 0, '', 0);
+INSERT INTO days VALUES (0, 1031, 0, 0, '', '', 'New Martyrs and Confessors of Russia', 5, 0, '', '', 0, 0, 0, '', 0);
