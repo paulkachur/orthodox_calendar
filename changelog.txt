@@ -14,3 +14,10 @@ days.sql: added Leavetaking Pascha to pday 38; made Martyrs Zeno and Zenas main 
 days.sql: added Royal Passionbearers on July 17
 zachalos.sql: added 2 OT entries for Royal Passionbearers
 readings.sql: added readings for Royal Passionbearers on July 17
+
+----------------------------------------------------------------
+2019-11-21
+core.lib.php: redefine New Martyrs of Russia to Sunday closest to Jan 25
+days.sql: elevate NMR to vigil rank
+zachalos.sql: add 3 NT paremias for NMR
+readings.sql: add readings for NMR
