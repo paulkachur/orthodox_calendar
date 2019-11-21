@@ -160,7 +160,8 @@ function __construct()
 	    else { $gday = $pday+$jump; } }
 // if today is a floating feast
 	$fday = array_search($pday, $year['floats']);
-	if ($m==1 && $d>24 && $dow==0) {$fday=1031;}
+// if today is new martyrs of Russia
+	if ($m==1 && $d>21 && $d<29 && $dow==0) {$fday=1031;}
 // if today is is involved in a lenten paremia swap
 	if (array_search($pday, $year['noparemias'])) {$noparemias=true;} else {$noparemias=false;}
 	if (array_search($pday, $year['getparemias'])) {$getparemias=true;} else {$getparemias=false;}
