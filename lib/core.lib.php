@@ -301,7 +301,8 @@ The heart of this system is the concept of a "paschal year," which begins with Z
 	  if ($wd < 4) { $j -= $wd; } else { $j += 7 - $wd; }
 	  $arr['fathers_six'] = $j;
 	$j = gregoriantojd(10,11,$y) - $pascha; $wd = $this->dow($j);
-	  if ($wd > 0) { $j += 7 - $wd; }
+//	  if ($wd > 0) { $j += 7 - $wd; }
+	  if ($wd < 4) { $j -= $wd; } else { $j += 7 - $wd; }
 	  $arr['fathers_seven'] = $j;
 	$j = gregoriantojd(10,26,$y) - $pascha; $wd = $this->dow($j);
 	  $arr['demetrius_saturday'] = $j - $wd - 1;
