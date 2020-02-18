@@ -1,3 +1,7 @@
+2020-02-18
+core.lib.php: changed definition of commemoration of fathers of 7th council from Sunday on/after Oct 11 (Greek practice) to Sunday nearest Oct 11 (Slavic practice)
+
+----------------------------------------------------------------
 2019-04-02
 zachalos.sql: added 105|106 Luke for new martyrs of Russia
 readings.sql: added readings for new martyrs, adjusted some index levels
