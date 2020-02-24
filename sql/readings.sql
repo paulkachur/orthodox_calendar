@@ -56,7 +56,7 @@ insert into readings values(0, 0, 0, -115, 'Gospel', '', 'Luke', '92', 911, 0);
 insert into readings values(0, 0, 0, -114, 'Epistle', '', 'Apostol', '290', 811, 0);
 insert into readings values(0, 0, 0, -114, 'Gospel', '', 'Luke', '95', 911, 0);
 insert into readings values(0, 0, 0, -113, 'Epistle', '', 'Apostol', '213', 811, 0);
-insert into readings values(0, 0, 0, -113, 'Gospel', '', 'Luke', '51', 911, 0);
+insert into readings values(0, 0, 0, -113, 'Gospel', '', 'Luke', '51ctr', 911, 0);
 insert into readings values(0, 0, 0, -112, 'Epistle', '', 'Apostol', '233', 811, 0);
 insert into readings values(0, 0, 0, -112, 'Gospel', '', 'Luke', '71', 911, 0);
 insert into readings values(0, 0, 0, -111, 'Epistle', '', 'Apostol', '294', 811, 0);
