@@ -1,3 +1,9 @@
+2020-12-08
+uploaded scripture database files, based on KJV. Due to size,
+files are broken up and numbered 0-5. "0NTKJ.sql" must be
+loaded first, as it contains the table definition.
+
+----------------------------------------------------------------
 2020-02-18
 core.lib.php: changed definition of commemoration of fathers of 7th council from Sunday on/after Oct 11 (Greek practice) to Sunday nearest Oct 11 (Slavic practice)
 
