@@ -52,3 +52,7 @@ INSERT INTO xceptions VALUES(38, 2022, 4, 26, 4, 23, '(Note: The service for St 
 INSERT INTO xceptions VALUES(39, 2022, 4, 30, 99, 99, '(Note: The service for St James is set aside.)', 0);
 INSERT INTO xceptions VALUES(40, 2022, 6, 19, 99, 99, '(Note: The service for St Jude is transferred to June 20.)', 0);
 INSERT INTO xceptions VALUES(41, 2022, 6, 20, 6, 19, '(Note: The service for St Jude is held today.)', 0);
+insert into xceptions values(0, 2023, 2, 27, 99, 99, '<b>(Note: The service for St Raphael is transferred to February 26.</b>)', 0);
+insert into xceptions values(0, 2023, 2, 26, 2, 27, '<b>(Note: The service for St Raphael is held today.</b>)', 0);
+insert into xceptions values(0, 2023, 6, 11, 99, 99, '<b>(Note: The service for Apostles Bartholomew and Barnabas is transferred to June 12.</b>)', 0);
+insert into xceptions values(0, 2023, 6, 12, 6, 11, '<b>(Note: The service for Apostles Bartholomew and Barnabas is held today.</b>)', 0);
